@@ -1,4 +1,5 @@
-coocbook
+# Chef Cookbook
 ========
-
-chefのcookbook
+## Require gems
+* chef
+* knife-solo
