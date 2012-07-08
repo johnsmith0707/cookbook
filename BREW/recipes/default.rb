@@ -6,10 +6,10 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-execute 'install homebrew from github' do
+execute "install" do
   command '/usr/bin/ruby -e "$(/usr/bin/curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"'
 end
 
-execute 'update homebrew' do
+execute "update" do
   command 'brew update'
 end

@@ -6,7 +6,10 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-execute 'install rubygems from github' do
-  command 'git clone git://github.com/rubygems/rubygems.git ~/rubygems'
-  command 'cd ~/rubygems && sudo ruby setup.rb'
+execute "install" do
+  command 'git clone git://github.com/rubygems/rubygems.git /tmp/rubygems'
+end
+
+execute "setup" do
+  command 'cd /tmp/rubygems && sudo ruby setup.rb'
 end
